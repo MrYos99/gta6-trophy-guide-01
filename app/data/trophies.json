@@ -2,34 +2,14 @@
  "game": "Grand Theft Auto VI",
  "platform": "PlayStation 5",
  "list": "the official 55 trophies, 2026-11-18",
- "counts": {
-  "total": 55,
-  "platinum": 1,
-  "gold": 2,
-  "silver": 6,
-  "bronze": 46,
-  "hidden": 28,
-  "online": 0
- },
+ "counts": { "total": 55, "platinum": 1, "gold": 2, "silver": 6, "bronze": 46, "hidden": 28, "online": 0 },
  "difficulty": "4/10",
  "time_to_platinum": "about 200 hours",
  "guide_sources": [
-  {
-   "name": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
-   "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
-  },
-  {
-   "name": "The GTA 6 Guide — Trophy List (28 Hidden)",
-   "url": "https://thegta6guide.com/gta-6-trophy-list/"
-  },
-  {
-   "name": "Exophase — GTA VI PS5 trophies",
-   "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/"
-  },
-  {
-   "name": "GamesRadar — GTA 6 Trophy and Achievement list",
-   "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophy-achievement-list/"
-  }
+  { "name": "PowerPyx — GTA 6 Trophy Guide & Roadmap", "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/" },
+  { "name": "The GTA 6 Guide — Trophy List (28 Hidden)", "url": "https://thegta6guide.com/gta-6-trophy-list/" },
+  { "name": "Exophase — GTA VI PS5 trophies", "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/" },
+  { "name": "GamesRadar — GTA 6 Trophy and Achievement list", "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophy-achievement-list/" }
  ],
  "trophies": [
   {
