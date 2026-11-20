@@ -163,6 +163,7 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
   border: 1px solid var(--line); color: var(--ink-dim); text-transform: capitalize;
 }
 .tag.missable { border-color: var(--danger); color: #ffb3ab; }
+.tag.unconfirmed { border-color: var(--accent-2); color: var(--accent-2); }
 .tag.hidden { border-color: var(--platinum); color: var(--platinum); }
 .tag.earned-tag { border-color: var(--good); color: var(--good); }
 
@@ -172,8 +173,13 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 
 .sources { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); }
 .sources h2 { font-size: 18px; margin: 0 0 8px; }
+.sources h3 { font-size: 15px; margin: 16px 0 6px; }
 .sources ul { margin: 0 0 10px; padding-left: 20px; font-size: 14px; }
+.sources li { margin-bottom: 5px; }
 .sources a { color: var(--teal); }
+.source-role { color: var(--ink-dim); }
+.source-counts { color: var(--ink-faint); font-size: 13px; }
+#agreementList li { margin-bottom: 6px; color: var(--ink-dim); }
 .disclaimer { font-size: 13px; color: var(--ink-faint); }
 
 .detail {
@@ -196,6 +202,7 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
   border: 1px solid var(--line); color: var(--ink-dim); text-transform: capitalize;
 }
 .detail-kind .missable { border-color: var(--danger); color: #ffb3ab; }
+.detail-kind .unconfirmed { border-color: var(--accent-2); color: var(--accent-2); }
 .detail-kind .hidden { border-color: var(--platinum); color: var(--platinum); }
 #detailName { margin: 0 0 6px; font-size: 26px; line-height: 1.15; }
 .detail-desc { margin: 0 0 4px; font-size: 15px; color: var(--ink-dim); font-style: italic; }
@@ -205,6 +212,7 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .detail-body p { font-size: 15px; }
 .detail-body ol { padding-left: 22px; font-size: 15px; }
 .detail-body li { margin-bottom: 6px; }
+.step-source { font-size: 13px; color: var(--teal); text-decoration: none; white-space: nowrap; }
 .detail-source { font-size: 13px; color: var(--ink-faint); }
 .detail-source a { color: var(--teal); }
 .detail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }

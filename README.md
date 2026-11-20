@@ -16,6 +16,13 @@ from the game, no account.
 - About 200 hours to the platinum. Difficulty 4/10.
 - Exactly 1 trophy is missable: **Positive Mental Attitude** — meditate with Lucia in
   Chapter 1, after the mission Down to Earth, before the chapter ends.
+- 197 cited steps across all 55 trophies (3–5 per trophy), each with its own
+  source link, from 10 sources. Per-trophy sources: GTABase 40, Push Square 9,
+  PowerPyx 5, Exophase 1.
+- 5 trophies have no confirmed trigger yet (Bad Luck, I Guess; Ten Pin;
+  In The Beginning…; Capital Offense; The Truth Is Out There) — the guide says
+  so plainly and shows the best-known route only where a source gives one.
+  Which animal triggers Fair Game is also not yet confirmed.
 
 ## How to use it
 
@@ -53,21 +60,46 @@ after the story. Cheats disable trophies and saving, so leave them alone.
 
 ## Where the facts come from
 
+Guide sources (per-trophy guides and steps):
+
 - PowerPyx — GTA 6 Trophy Guide & Roadmap
   https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/
-- The GTA 6 Guide — Full Trophy & Achievement List
-  https://thegta6guide.com/trophy-achievement-list/
+- GTABase — GTA 6 Trophy Guide & Achievements List
+  https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series
+- Push Square — GTA 6: Trophy Guide & Roadmap (WIP)
+  https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap
+- GTADb — GTA 6 PS5 Trophies & Platinum Guide
+  https://gtadb.net/articles/gta-6-trophies-platinum-guide/
+
+List sources (the 55 names, descriptions and grades, cross-checked):
+
 - Exophase — Grand Theft Auto VI trophies
   https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/
-- PSNProfiles — GTA VI trophy list
-  https://psnprofiles.com/trophies/25264-grand-theft-auto-vi
-- GamesRadar — GTA 6 trophy list
-  https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophies-achievements-list/
+- The GTA 6 Guide — Trophy List (28 Hidden)
+  https://thegta6guide.com/gta-6-trophy-list/
+- PSNProfiles — Grand Theft Auto VI trophies
+  https://psnprofiles.com/trophies/43531-grand-theft-auto-vi
+- Insider Gaming — Complete GTA 6 Trophy List
+  https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/
+- GTA BOOM — Every GTA 6 Trophy and Achievement
+  https://www.gtaboom.com/every-gta-6-trophy-and-achievement-at-launch-and-how-to-unlock-them-fc5f
+- The Big Lead — GTA 6 trophy/achievement list
+  https://www.thebiglead.com/gta-6-trophy-achievement-list/
+
+All ten sources agree on the same 55 trophies (1 platinum, 2 gold, 6 silver,
+46 bronze, 28 hidden, 0 online). Where they disagree, the guide says so in the
+app's "How the sources agree" section: time to platinum is ~200 hours per
+PowerPyx, GTABase and GTADb but 250+ per Push Square; Positive Mental Attitude
+is flagged as possibly missable by PowerPyx, GTABase and GTADb while Push
+Square lists none known yet. Two sources were checked and dropped: GamesRadar
+(blocked, content unverifiable on 2026-11-20) and PlayStationTrophies.org
+(no guide exists yet).
 
 Trophy names and descriptions are the official PlayStation text. The guides are
-written for this page, in our own words, from the sources above. Two trophies
-(Bad Luck, I Guess and Ten Pin) have no confirmed trigger yet — the guide says so
-plainly instead of guessing.
+written for this page, in our own words, from the sources above. Five trophies
+(Bad Luck, I Guess; Ten Pin; In The Beginning…; Capital Offense; The Truth Is
+Out There) have no confirmed trigger yet — the guide says so plainly instead of
+guessing, and shows PowerPyx's route only where one exists, marked unconfirmed.
 
 ## Files
 
@@ -75,12 +107,12 @@ plainly instead of guessing.
 - `app/data/trophies.json` — the 55 trophies: official name, description, grade,
   hidden flag, kind, missable flag, roadmap stage, guide, steps, and source.
 - `screenshots/` — 4 screenshots of the app (guide open over the checklist,
-  missable filter with the sources list, roadmap part 1: stages 1–4,
-  roadmap part 2: stages 5–6 plus the roadmap note). The roadmap is split
-  across two shots because all six stage cards do not fit one 1280px frame;
-  the missable trophy is shown in shot 1 (guide open, Missable flag), in
-  shot 2 (the missable filter alone) and in the roadmap's missable callout
-  in shot 3.
+  missable filter with the sources list and agreement notes, roadmap part 1:
+  stages 1–4, roadmap part 2: stages 5–6 plus the roadmap note). The roadmap
+  is split across two shots because all six stage cards do not fit one 1280px
+  frame; the missable trophy is shown in shot 1 (guide open, Missable flag),
+  in shot 2 (the missable filter alone) and in the roadmap's missable callout
+  in shot 3. Shot 1 also shows the numbered steps, each with its own source.
 - `main.ts` — copies `app/` and `screenshots/` to the output and writes
   `dossier.json` via the vendored make.fun library.
 - `serve.ts` — a small static server for local development.

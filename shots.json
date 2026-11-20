@@ -1,1 +1,38 @@
-[{"file":"1-checklist.jpg","note":"Cover: checklist with the guide open for Positive Mental Attitude (the missable trophy): target counter 0/18 spots, numbered steps, source beside it, 12 of 55 earned","path":"/?trophy=28&spoiler=off&earned=1,3,4,5,6,7,8,9,10,11,12,13","viewport":{"height":800,"width":1280}},{"file":"2-missable-filter.jpg","note":"Missable filter: the one missable trophy alone in the list, 12 of 55 earned, with the sources section below","path":"/?filter=missable&spoiler=off&earned=1,3,4,5,6,7,8,9,10,11,12,13","viewport":{"height":800,"width":1280}},{"file":"3-roadmap.jpg","note":"Roadmap to the platinum, part 1: stages 1-4 with the missable callout at the top, stage trophy chips, 12 of 55 earned","path":"/?view=roadmap&earned=1,3,4,5,6,7,8,9,10,11,12,13","viewport":{"height":1155,"width":1280}},{"file":"4-roadmap-part2.jpg","note":"Roadmap to the platinum, part 2: stages 5-6 with all trophy chips plus the roadmap note (Stage 1, 60-80 h; Stage 2, 10-20 h; Stage 3, ~100 h; Stages 4-6, ~10-25 h each). Stage counts 0/10 and 1/12 sum with part 1 to the same 12 earned","path":"/?view=roadmap&earned=1,3,4,5,6,7,8,9,10,11,12,13#stage-5","viewport":{"height":800,"width":1280}}]
+[
+ {
+  "file": "1-checklist.jpg",
+  "note": "Cover: checklist with the guide open for Positive Mental Attitude (the missable trophy): target counter 0/18 spots, numbered steps each with its own source link, source beside it, 12 of 55 earned",
+  "path": "/?trophy=28&spoiler=off&earned=1,3,4,5,6,7,8,9,10,11,12,13",
+  "viewport": {
+   "height": 800,
+   "width": 1280
+  }
+ },
+ {
+  "file": "2-missable-filter.jpg",
+  "note": "Missable filter: the one missable trophy alone in the list, 12 of 55 earned, with the sources section below (10 sources with per-source trophy/step counts, agreement notes follow)",
+  "path": "/?filter=missable&spoiler=off&earned=1,3,4,5,6,7,8,9,10,11,12,13",
+  "viewport": {
+   "height": 800,
+   "width": 1280
+  }
+ },
+ {
+  "file": "3-roadmap.jpg",
+  "note": "Roadmap to the platinum, part 1: stages 1-4 with the missable callout at the top, stage trophy chips, 12 of 55 earned",
+  "path": "/?view=roadmap&earned=1,3,4,5,6,7,8,9,10,11,12,13",
+  "viewport": {
+   "height": 1155,
+   "width": 1280
+  }
+ },
+ {
+  "file": "4-roadmap-part2.jpg",
+  "note": "Roadmap to the platinum, part 2: stages 5-6 with all trophy chips plus the roadmap note (Stage 1, 60-80 h; Stage 2, 10-20 h; Stage 3, ~100 h; Stages 4-6, ~10-25 h each). Stage counts 0/10 and 1/12 sum with part 1 to the same 12 earned",
+  "path": "/?view=roadmap&earned=1,3,4,5,6,7,8,9,10,11,12,13#stage-5",
+  "viewport": {
+   "height": 800,
+   "width": 1280
+  }
+ }
+]

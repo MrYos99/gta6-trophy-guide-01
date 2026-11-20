@@ -25,13 +25,8 @@ const STAGES = [
   { n: 6, title: "Money & one-offs", hours: "~10 h", text: "Launder $250,000 of marked bills, spend $100,000 in shops, buy all 8 garages, register 10 vehicles with Scooter Bros, and pick up the odd one-offs: the cocktail, the Banshee through the window, bowling, max strength with both characters, the UFO, and whatever Bad Luck, I Guess and Ten Pin turn out to be." }
 ];
 
-const SOURCES = [
-  { name: "PowerPyx — GTA 6 Trophy Guide & Roadmap", url: "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/" },
-  { name: "The GTA 6 Guide — Full Trophy & Achievement List", url: "https://thegta6guide.com/trophy-achievement-list/" },
-  { name: "Exophase — Grand Theft Auto VI trophies", url: "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/" },
-  { name: "PSNProfiles — GTA VI trophy list", url: "https://psnprofiles.com/trophies/25264-grand-theft-auto-vi" },
-  { name: "GamesRadar — GTA 6 trophy list", url: "https://www.gamesradar.com/games/grand-theft-auto/gta-6-trophies-achievements-list/" }
-];
+const SOURCES = []; // filled from data.guide_sources in init()
+let AGREEMENTS = [];
 
 let trophies = [];
 let earned = new Set();
@@ -113,6 +108,7 @@ function tagHtml(t) {
   const tags = [`<span class="tag">${KIND_DISPLAY[t.kind] || t.kind}</span>`];
   if (t.hidden) tags.push(`<span class="tag hidden">Hidden</span>`);
   if (t.missable) tags.push(`<span class="tag missable">Missable</span>`);
+  if (t.unconfirmed) tags.push(`<span class="tag unconfirmed">Unconfirmed</span>`);
   if (earned.has(t.id)) tags.push(`<span class="tag earned-tag">Earned</span>`);
   return tags.join("");
 }
@@ -201,6 +197,28 @@ function renderSources() {
     const a = document.createElement("a");
     a.href = s.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = s.name;
     li.appendChild(a);
+    const role = document.createElement("span");
+    role.className = "source-role";
+    role.textContent = ` — ${s.role}: ${s.covers}`;
+    li.appendChild(role);
+    const cited = trophies.filter((t) => t.source === s.name).length;
+    const steps = trophies.reduce((n, t) => n + (t.steps || []).filter((st) => (typeof st === "object" ? st.source : "") === s.name).length, 0);
+    if (cited || steps) {
+      const counts = document.createElement("span");
+      counts.className = "source-counts";
+      counts.textContent = ` (${cited} ${cited === 1 ? "trophy" : "trophies"}, ${steps} cited ${steps === 1 ? "step" : "steps"})`;
+      li.appendChild(counts);
+    }
+    ul.appendChild(li);
+  }
+}
+
+function renderMatrix() {
+  const ul = $("#agreementList");
+  ul.innerHTML = "";
+  for (const line of AGREEMENTS) {
+    const li = document.createElement("li");
+    li.textContent = line;
     ul.appendChild(li);
   }
 }
@@ -232,6 +250,8 @@ function renderDetail() {
   $("#detailHidden").textContent = t.hidden ? "Hidden" : "Shown";
   $("#detailMissable").textContent = t.missable ? "Missable" : "";
   $("#detailMissable").style.display = t.missable ? "" : "none";
+  $("#detailUnconfirmed").textContent = t.unconfirmed ? "Unconfirmed trigger" : "";
+  $("#detailUnconfirmed").style.display = t.unconfirmed ? "" : "none";
   $("#detailName").textContent = displayName(t);
   $("#detailDesc").textContent = displayDesc(t);
   $("#detailMeta").textContent = `${t.gamerscore} gamerscore · Trophy ${t.id} of 55 · ${earned.has(t.id) ? "Earned" : "Not earned yet"}`;
@@ -254,7 +274,17 @@ function renderDetail() {
     ol.innerHTML = "";
     (t.steps || []).forEach((s) => {
       const li = document.createElement("li");
-      li.textContent = s;
+      if (typeof s === "object" && s !== null) {
+        li.appendChild(document.createTextNode(s.text + " "));
+        const src = document.createElement("a");
+        src.className = "step-source";
+        src.href = s.source_url || "#";
+        src.target = "_blank"; src.rel = "noopener";
+        src.textContent = "— " + s.source;
+        li.appendChild(src);
+      } else {
+        li.textContent = s;
+      }
       ol.appendChild(li);
     });
     $("#detailSource").textContent = t.source;
@@ -310,6 +340,8 @@ async function init() {
   const res = await fetch(DATA_URL);
   const data = await res.json();
   trophies = data.trophies.slice().sort((a, b) => a.id - b.id);
+  SOURCES.push(...(data.guide_sources || []));
+  AGREEMENTS = data.agreements || [];
   // Drop any earned id the data does not know (e.g. a stale ?earned= link),
   // so the progress count can never exceed 55.
   const valid = new Set(trophies.map((t) => t.id));
@@ -321,6 +353,7 @@ async function init() {
   renderList();
   renderRoadmap();
   renderSources();
+  renderMatrix();
   // The roadmap scroll has to wait until the stages exist, or the page
   // scrolls to an empty section and stays there. On a fresh load (?view=roadmap)
   // show it without scrolling: the hero and toolbar stay visible and the
