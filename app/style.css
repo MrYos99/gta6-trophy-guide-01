@@ -30,7 +30,7 @@ body {
 
 .hero {
   background: linear-gradient(115deg, #3b0f54 0%, #a4136b 45%, #e8492f 78%, #ff9e3d 100%);
-  padding: 34px 20px 26px;
+  padding: 22px 20px 16px;
 }
 
 .hero-inner { max-width: 1080px; margin: 0 auto; }
@@ -96,7 +96,7 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .import-btn input { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
 
 .roadmap {
-  margin: 14px 0 6px; padding: 20px; border: 1px solid var(--line);
+  margin: 14px 0 6px; padding: 16px; border: 1px solid var(--line);
   border-radius: 12px; background: var(--panel);
 }
 .roadmap h2 { margin: 0 0 8px; font-size: 22px; }
@@ -110,10 +110,11 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .missable-callout p { margin: 0; font-size: 14px; color: var(--ink-dim); }
 .missable-callout strong { color: var(--ink); }
 
-.stages { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.stages { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+@media (min-width: 900px) { .stages { grid-template-columns: 1fr 1fr; } }
 .stages li {
   display: grid; grid-template-columns: 34px 1fr; gap: 12px;
-  padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2);
+  padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2);
 }
 .stage-num {
   width: 34px; height: 34px; border-radius: 50%; background: var(--accent);
@@ -122,12 +123,18 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .stages h3 { margin: 0 0 2px; font-size: 15px; }
 .stages h3 span { color: var(--ink-faint); font-weight: 400; font-size: 13px; }
 .stages p { margin: 0 0 8px; font-size: 14px; color: var(--ink-dim); }
-.stage-trophies { display: flex; flex-wrap: wrap; gap: 5px; }
+.stage-trophies { display: flex; flex-wrap: wrap; gap: 4px; }
 .stage-trophies button {
-  padding: 3px 9px; font-size: 12px; border-radius: 999px; background: var(--bg);
+  padding: 2px 8px; font-size: 11px; border-radius: 999px; background: var(--bg);
 }
 .stage-trophies button.earned { text-decoration: line-through; opacity: 0.65; }
 .roadmap-note { margin: 12px 0 0; font-size: 13px; color: var(--ink-faint); }
+
+.next-up {
+  margin: 12px 0 0; padding: 10px 14px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--panel); font-size: 14px; color: var(--ink-dim);
+}
+.next-up strong { color: var(--ink); }
 
 .list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
 
@@ -193,6 +200,8 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 #detailName { margin: 0 0 6px; font-size: 26px; line-height: 1.15; }
 .detail-desc { margin: 0 0 4px; font-size: 15px; color: var(--ink-dim); font-style: italic; }
 .detail-meta { margin: 0 0 16px; font-size: 13px; color: var(--ink-faint); }
+.detail-target { margin: -8px 0 16px; font-size: 15px; font-weight: 700; color: var(--teal); }
+.detail-target span { color: var(--ink-faint); font-weight: 400; }
 .detail-body p { font-size: 15px; }
 .detail-body ol { padding-left: 22px; font-size: 15px; }
 .detail-body li { margin-bottom: 6px; }

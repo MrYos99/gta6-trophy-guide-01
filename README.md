@@ -70,8 +70,12 @@ plainly instead of guessing.
 - `app/index.html`, `app/style.css`, `app/app.js` — the app.
 - `app/data/trophies.json` — the 55 trophies: official name, description, grade,
   hidden flag, kind, missable flag, roadmap stage, guide, steps, and source.
-- `screenshots/` — 4 screenshots of the app (checklist, open guide, roadmap,
-  missable filter).
+- `screenshots/` — 4 screenshots of the app (guide open over the checklist,
+  plain checklist with the Next up strip, roadmap part 1: stages 1–4,
+  roadmap part 2: stages 5–6 plus the roadmap note). The roadmap is split
+  across two shots because all six stage cards do not fit one 1280px frame;
+  the missable trophy is still shown in shot 1 (guide open, Missable flag)
+  and in the roadmap's missable callout in shot 3.
 - `main.ts` — copies `app/` and `screenshots/` to the output and writes
   `dossier.json` via the vendored make.fun library.
 - `serve.ts` — a small static server for local development.

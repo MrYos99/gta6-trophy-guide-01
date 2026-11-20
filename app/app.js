@@ -117,7 +117,17 @@ function tagHtml(t) {
   return tags.join("");
 }
 
+function renderNextUp() {
+  const el = $("#nextUp");
+  const ordered = trophies.slice().sort((a, b) => (a.stage - b.stage) || (a.id - b.id));
+  const next = ordered.find((t) => !earned.has(t.id));
+  if (!next) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `Next up: <strong>${displayName(next)}</strong> — Stage ${next.stage}`;
+}
+
 function renderList() {
+  renderNextUp();
   const list = filtered();
   const ul = $("#list");
   const empty = $("#emptyState");
@@ -160,6 +170,7 @@ function renderRoadmap() {
   for (const s of STAGES) {
     const ts = trophies.filter((t) => t.stage === s.n);
     const li = document.createElement("li");
+    li.id = "stage-" + s.n;
     li.innerHTML = `
       <span class="stage-num">${s.n}</span>
       <div>
@@ -224,6 +235,14 @@ function renderDetail() {
   $("#detailName").textContent = displayName(t);
   $("#detailDesc").textContent = displayDesc(t);
   $("#detailMeta").textContent = `${t.gamerscore} gamerscore · Trophy ${t.id} of 55 · ${earned.has(t.id) ? "Earned" : "Not earned yet"}`;
+  const targetEl = $("#detailTarget");
+  if (!masked && t.target) {
+    const done = earned.has(t.id) ? t.target.count : 0;
+    targetEl.hidden = false;
+    targetEl.innerHTML = `${done}/${t.target.count} <span>${t.target.unit}</span>`;
+  } else {
+    targetEl.hidden = true;
+  }
   if (masked) {
     $("#detailGuide").textContent = "This is a hidden story trophy. Turn off “Hide story spoilers” above to read its guide.";
     $("#detailSteps").innerHTML = "";
@@ -307,6 +326,12 @@ async function init() {
   // show it without scrolling: the hero and toolbar stay visible and the
   // roadmap starts right below them. Clicking the button still scrolls to it.
   if (openRoadmap) setRoadmapVisible(true, false);
+  // A #stage-N deep link has to wait until the stages exist too: the browser
+  // cannot jump to an element the fetch has not rendered yet.
+  if (location.hash) {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
 
   $("#search").addEventListener("input", (ev) => { query = ev.target.value; renderList(); });
   $("#grade").addEventListener("change", (ev) => { filterGrade = ev.target.value; renderList(); });

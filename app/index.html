@@ -50,15 +50,17 @@
     <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
   </div>
 
+  <p id="nextUp" class="next-up" hidden></p>
+
   <section id="roadmap" class="roadmap" hidden>
     <h2>Roadmap to the platinum</h2>
-    <p class="roadmap-intro">Five chapters, about 60 to 80 hours of story, then cleanup in free-roam. There is no mission replay in GTA VI, but everything the platinum needs is still reachable after the story, so play it once and clean up afterwards. Cheats disable trophies and saving, so leave them alone. Keep a manual save at the start and end of each chapter: 15 manual slots plus one autosave.</p>
+    <p class="roadmap-intro">Five chapters, about 60 to 80 hours of story, then cleanup in free-roam. There is no mission replay in GTA VI, but everything the platinum needs is still reachable after the story, so play it once and clean up afterwards. Cheats disable trophies and saving, so leave them alone.</p>
     <div class="missable-callout">
       <h3>One trophy can be missed</h3>
-      <p><strong>Positive Mental Attitude</strong> is the only missable trophy. During Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning. She says she is going to meditate and walks to the balcony. Follow her, accept, and she teaches you. That meditation is gone for good after Chapter 1, and it is still unclear whether it counts toward the trophy, so do it while you can. Every other trophy can be earned after the story.</p>
+      <p><strong>Positive Mental Attitude</strong> is the only missable trophy. During Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning. She says she is going to meditate and walks to the balcony. Follow her, accept, and she teaches you. That meditation is gone for good after Chapter 1, and it is still unclear whether it counts toward the trophy, so do it while you can.</p>
     </div>
     <ol class="stages" id="stages"></ol>
-    <p class="roadmap-note">Roadmap order and timings follow PowerPyx. Step 1 takes 60 to 80 hours, Step 2 about 100 hours of checklist work, Step 3 about 10 hours of cleanup.</p>
+    <p class="roadmap-note">Roadmap order and timings follow PowerPyx. Stage 1, 60–80 h; Stage 2, 10–20 h; Stage 3, ~100 h; Stages 4–6, ~10–25 h each.</p>
   </section>
 
   <p id="emptyState" class="empty" hidden></p>
@@ -78,6 +80,7 @@
     <h2 id="detailName"></h2>
     <p id="detailDesc" class="detail-desc"></p>
     <p id="detailMeta" class="detail-meta"></p>
+    <p id="detailTarget" class="detail-target" hidden></p>
     <div class="detail-body">
       <p id="detailGuide"></p>
       <ol id="detailSteps"></ol>
