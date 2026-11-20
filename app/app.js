@@ -8,6 +8,7 @@ const LS_SPOILER = "gta6-spoiler";
 
 const KIND_LABELS = {
   all: "All", story: "Story", side: "Side stories", missable: "Missable",
+  unconfirmed: "Unconfirmed",
   collectibles: "Collectibles", activities: "Activities", crime: "Crime",
   money: "Money", "one-off": "One-offs", online: "Online (0)"
 };
@@ -73,7 +74,8 @@ function filtered() {
   return trophies.filter((t) => {
     if (filterKind === "online") return false;
     if (filterKind === "missable" && !t.missable) return false;
-    if (filterKind !== "all" && filterKind !== "missable" && t.kind !== filterKind) return false;
+    if (filterKind === "unconfirmed" && !t.unconfirmed) return false;
+    if (filterKind !== "all" && filterKind !== "missable" && filterKind !== "unconfirmed" && t.kind !== filterKind) return false;
     if (filterGrade !== "all" && t.grade !== filterGrade) return false;
     if (query) {
       const hay = isMasked(t) ? "" : (t.name + " " + t.description).toLowerCase();
@@ -122,8 +124,33 @@ function renderNextUp() {
   el.innerHTML = `Next up: <strong>${displayName(next)}</strong> — Stage ${next.stage}`;
 }
 
+function renderUnconfirmed() {
+  const section = $("#unconfirmedCallout");
+  const ul = $("#unconfirmedList");
+  ul.innerHTML = "";
+  const list = trophies.filter((t) => t.unconfirmed);
+  if (!list.length) { section.hidden = true; return; }
+  section.hidden = false;
+  for (const t of list) {
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button";
+    // Names stay masked while story spoilers are hidden, exactly like the list.
+    b.textContent = (earned.has(t.id) ? "✓ " : "") + (isMasked(t) ? `Hidden trophy · ${t.grade} · ${t.gamerscore}G` : t.name);
+    if (earned.has(t.id)) b.classList.add("earned");
+    b.addEventListener("click", () => openDetail(t.id));
+    li.appendChild(b);
+    const tag = document.createElement("span");
+    tag.className = "tag unconfirmed";
+    tag.textContent = "Unconfirmed";
+    li.appendChild(tag);
+    ul.appendChild(li);
+  }
+}
+
 function renderList() {
   renderNextUp();
+  renderUnconfirmed();
   const list = filtered();
   const ul = $("#list");
   const empty = $("#emptyState");
@@ -201,6 +228,12 @@ function renderSources() {
     role.className = "source-role";
     role.textContent = ` — ${s.role}: ${s.covers}`;
     li.appendChild(role);
+    if (s.updated) {
+      const date = document.createElement("span");
+      date.className = "source-date";
+      date.textContent = s.updated === "undated" ? " · No date shown" : ` · Updated ${s.updated}`;
+      li.appendChild(date);
+    }
     const cited = trophies.filter((t) => t.source === s.name).length;
     const steps = trophies.reduce((n, t) => n + (t.steps || []).filter((st) => (typeof st === "object" ? st.source : "") === s.name).length, 0);
     if (cited || steps) {
@@ -255,6 +288,29 @@ function renderDetail() {
   $("#detailName").textContent = displayName(t);
   $("#detailDesc").textContent = displayDesc(t);
   $("#detailMeta").textContent = `${t.gamerscore} gamerscore · Trophy ${t.id} of 55 · ${earned.has(t.id) ? "Earned" : "Not earned yet"}`;
+  const answerEl = $("#detailAnswer");
+  if (!masked && t.answer) {
+    answerEl.hidden = false;
+    answerEl.innerHTML = "";
+    answerEl.appendChild(document.createTextNode("In short: " + t.answer + " "));
+    const src = document.createElement("a");
+    src.className = "step-source";
+    src.href = t.answer_source_url || "#";
+    src.target = "_blank"; src.rel = "noopener";
+    src.textContent = "— " + t.answer_source;
+    answerEl.appendChild(src);
+  } else {
+    answerEl.hidden = true;
+    answerEl.innerHTML = "";
+  }
+  const missableEl = $("#detailMissableNote");
+  if (!masked && t.missable_note) {
+    missableEl.hidden = false;
+    missableEl.textContent = t.missable_note;
+  } else {
+    missableEl.hidden = true;
+    missableEl.textContent = "";
+  }
   const targetEl = $("#detailTarget");
   if (!masked && t.target) {
     const done = earned.has(t.id) ? t.target.count : 0;

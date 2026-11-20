@@ -10,7 +10,7 @@
   "bronze": 46,
   "hidden": 28,
   "online": 0,
-  "cited_steps": 197,
+  "cited_steps": 227,
   "sources": 10,
   "unconfirmed": 5
  },
@@ -21,61 +21,71 @@
    "name": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
    "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
    "role": "Guide",
-   "covers": "Per-trophy guide; the original source of this guide, and still the only source with a route for the three unconfirmed one-offs."
+   "covers": "Per-trophy guide; the original source of this guide, and still the only source with a route for the three unconfirmed one-offs.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "GTABase — GTA 6 Trophy Guide & Achievements List",
    "url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
    "role": "Guide",
-   "covers": "Unlock tips for every trophy, the full 100% breakdown, and the roadmap."
+   "covers": "Unlock tips for every trophy, the full 100% breakdown, and the roadmap.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
    "url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap",
    "role": "Guide",
-   "covers": "Roadmap and instructions for more than half the trophies; stunt, range, drone and collectible counts."
+   "covers": "Roadmap and instructions for more than half the trophies; stunt, range, drone and collectible counts.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
    "url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/",
    "role": "Guide",
-   "covers": "Crosschecked list with cautious notes on the unresolved trophies and manual-save advice."
+   "covers": "Crosschecked list with cautious notes on the unresolved trophies and manual-save advice.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "Exophase — Grand Theft Auto VI trophies",
    "url": "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/",
    "role": "List",
-   "covers": "The trophy list this guide was built from: names, descriptions and grades."
+   "covers": "The trophy list this guide was built from: names, descriptions and grades.",
+   "updated": "undated"
   },
   {
    "name": "The GTA 6 Guide — Trophy List (28 Hidden)",
    "url": "https://thegta6guide.com/gta-6-trophy-list/",
    "role": "List",
-   "covers": "Full 55 with PS5 grades and Xbox Gamerscore."
+   "covers": "Full 55 with PS5 grades and Xbox Gamerscore.",
+   "updated": "19 Nov 2026"
   },
   {
    "name": "PSNProfiles — Grand Theft Auto VI trophies",
    "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi",
    "role": "List",
-   "covers": "PlayStation Network trophy list with owner counts."
+   "covers": "PlayStation Network trophy list with owner counts.",
+   "updated": "undated"
   },
   {
    "name": "Insider Gaming — Complete GTA 6 Trophy List",
    "url": "https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/",
    "role": "List",
-   "covers": "Full trophy table: names, descriptions and grades."
+   "covers": "Full trophy table: names, descriptions and grades.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "GTA BOOM — Every GTA 6 Trophy and Achievement",
    "url": "https://www.gtaboom.com/every-gta-6-trophy-and-achievement-at-launch-and-how-to-unlock-them-fc5f",
    "role": "List",
-   "covers": "Full table with a one-line unlock note per trophy."
+   "covers": "Full table with a one-line unlock note per trophy.",
+   "updated": "18 Nov 2026"
   },
   {
    "name": "The Big Lead — GTA 6 trophy/achievement list",
    "url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/",
    "role": "List",
-   "covers": "Full table with Gamerscore and 100% notes."
+   "covers": "Full table with Gamerscore and 100% notes.",
+   "updated": "18 Nov 2026"
   }
  ],
  "trophies": [
@@ -107,8 +117,26 @@
      "text": "Plan on around 200 hours, most of it on the 100% checklist for A Long Road.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "The platinum needs all 54 others — including 100% completion, 250 stunts, full exploration and partner robberies.",
+     "source": "GTA BOOM — Every GTA 6 Trophy and Achievement",
+     "source_url": "https://www.gtaboom.com/every-gta-6-trophy-and-achievement-at-launch-and-how-to-unlock-them-fc5f"
+    },
+    {
+     "text": "One playthrough is enough, and you can keep playing after the credits.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Difficulty doesn't affect trophies, but cheats disable them.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Unlock the other 54 trophies and the platinum pops.",
+   "answer_source": "GTA BOOM — Every GTA 6 Trophy and Achievement",
+   "answer_source_url": "https://www.gtaboom.com/every-gta-6-trophy-and-achievement-at-launch-and-how-to-unlock-them-fc5f"
   },
   {
    "id": 2,
@@ -139,7 +167,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the mission Gone Fishing in Chapter 1.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 3,
@@ -170,7 +201,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete Chapter 1.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 4,
@@ -201,7 +235,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete Chapter 2.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 5,
@@ -232,7 +269,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete Chapter 3.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 6,
@@ -263,7 +303,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Complete Chapter 4.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 7,
@@ -293,8 +336,16 @@
      "text": "No trophy depends on how you play a mission, even though there is no mission replay.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "On Xbox this one is worth 50 Gamerscore — the second-biggest single payout after A Long Road.",
+     "source": "The Big Lead — GTA 6 trophy/achievement list",
+     "source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
     }
-   ]
+   ],
+   "answer": "Complete the final mission.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 8,
@@ -325,7 +376,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 2 mission Breakfast Run.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 9,
@@ -356,7 +410,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 3 mission The Cartel Heist.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 10,
@@ -387,7 +444,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 4 mission Child's Play.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 11,
@@ -418,7 +478,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 4 mission Headliners.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 12,
@@ -449,7 +512,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 4 mission VCIA Takedown.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 13,
@@ -480,7 +546,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Complete the Chapter 5 mission Operation Savage Glory.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 14,
@@ -518,10 +587,23 @@
      "text": "Only a share of the rest: 100 optional missions, 200 of 277 vehicle scans, 100 of 255 animal studies, 15 of 18 meditations, 70 of 80 challenges, 300 stunts and 100 WAiNK scans.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "PSNProfiles tracks the checklist at 0/100 — the same 100-point scale the in-game Progress screen shows.",
+     "source": "PSNProfiles — Grand Theft Auto VI trophies",
+     "source_url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"
+    },
+    {
+     "text": "On Xbox it's worth 100 Gamerscore — the most of any single achievement.",
+     "source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+     "source_url": "https://thegta6guide.com/gta-6-trophy-list/"
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Attain 100% completion on the checklist that unlocks after the story.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 15,
@@ -554,6 +636,21 @@
      "text": "Flying under bridges is the quickest way to rack them up, and the optional challenge on each stunt isn't needed.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "The extra challenges attached to Stunt Jumps don't need to be cleared for this trophy.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Find stunts you have discovered on the map under Touch Pad, Exploration, Stunt Spots.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "The trophy wants 250 stunts; the 100% checklist has its own separate stunt count.",
+     "source": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
+     "source_url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/"
     }
    ],
    "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
@@ -561,7 +658,10 @@
    "target": {
     "count": 250,
     "unit": "stunts"
-   }
+   },
+   "answer": "Complete any 250 of the 397 stunts.",
+   "answer_source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+   "answer_source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
   },
   {
    "id": 16,
@@ -600,8 +700,16 @@
      "text": "The 9 types: fishing, hunting, golf, a shooting range, pool, basketball (sink one basket), an arcade game, winning a race, and a stunt.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Trying an activity is enough — you don't need to win it.",
+     "source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+     "source_url": "https://thegta6guide.com/gta-6-trophy-list/"
     }
-   ]
+   ],
+   "answer": "Try each of the 9 activity types once — winning isn't required.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 17,
@@ -645,8 +753,21 @@
      "text": "Ranges also raise your Focus level, which helps with Gunslinger.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Most challenges have three difficulty tiers, all needing gold — and some stay locked until you meet other conditions.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Find the ranges on the map under Touch Pad, Activities, Shooting Ranges.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Earn a gold medal in all 42 shooting-range challenges.",
+   "answer_source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+   "answer_source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
   },
   {
    "id": 18,
@@ -685,8 +806,21 @@
      "text": "One win per location is enough here, but the 100% checklist wants all 42 drone races, so finish each location while you're there.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Some drone races charge an entry fee.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Find discovered locations under Touch Pad, Activities, Drones, Top Fun Drones.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Win a Top Fun drone race at each of the 14 locations.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 19,
@@ -725,8 +859,21 @@
      "text": "There are 40 races to choose from — winning the same race again doesn't count.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Track race locations under Touch Pad, Activities, Racing.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Most race locations let you hire a car; if you bring your own, watch its Rating — Mod Shop upgrades raise it.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Win 20 different races.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 20,
@@ -757,7 +904,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Beat Cal in a fishing challenge.",
+   "answer_source": "Insider Gaming — Complete GTA 6 Trophy List",
+   "answer_source_url": "https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/"
   },
   {
    "id": 21,
@@ -788,7 +938,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Complete any one arcade game.",
+   "answer_source": "Insider Gaming — Complete GTA 6 Trophy List",
+   "answer_source_url": "https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/"
   },
   {
    "id": 22,
@@ -828,7 +981,10 @@
    "target": {
     "count": 5,
     "unit": "quests"
-   }
+   },
+   "answer": "Complete all five of Andy's quests.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 23,
@@ -861,6 +1017,16 @@
      "text": "Track it under Progress > Collections > Kenton's Treasures.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "The last one is Maritime Disputes — finishing it pops the trophy.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Quest givers can vanish temporarily during the story — Kenton included — but every trophy-related character comes back.",
+     "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+     "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
@@ -868,7 +1034,10 @@
    "target": {
     "count": 7,
     "unit": "shipwrecks"
-   }
+   },
+   "answer": "Finish Kenton's questline — all 7 shipwrecks, ending with Maritime Disputes.",
+   "answer_source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+   "answer_source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
   },
   {
    "id": 24,
@@ -903,7 +1072,10 @@
    "target": {
     "count": 5,
     "unit": "jobs"
-   }
+   },
+   "answer": "Complete all five of Billy's jobs, ending with Hometown Heroes.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 25,
@@ -948,7 +1120,10 @@
      "source": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
      "source_url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/"
     }
-   ]
+   ],
+   "answer": "Complete 8 full stranger mission strands.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 26,
@@ -988,7 +1163,10 @@
    "target": {
     "count": 16,
     "unit": "cars"
-   }
+   },
+   "answer": "Deliver all 16 cars on Randy's wishlist.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 27,
@@ -1024,7 +1202,10 @@
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Complete Tyrone's questline — destroy the Synthetic Labs, then finish his last job.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 28,
@@ -1057,6 +1238,16 @@
      "text": "Keep a manual save before leaving Chapter 1 — whether the Lucia meditation is required is still unresolved.",
      "source": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
      "source_url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/"
+    },
+    {
+     "text": "A meditation only counts once the final 'zen' animation has played.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Find discovered spots on the map under Touch Pad, Exploration, Meditate Around Leonida.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
    ],
    "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
@@ -1064,7 +1255,11 @@
    "target": {
     "count": 18,
     "unit": "spots"
-   }
+   },
+   "missable_note": "PowerPyx (18 Nov) calls this 'potentially 1' missable trophy and GTABase (18 Nov) calls it 'possibly' missable — the Chapter 1 meditation with Lucia. Both say it is still unconfirmed whether the trophy actually needs that meditation, and Push Square lists 'None known yet'. Do the meditation while you can; nothing else in the game is missable.",
+   "answer": "Meditate at all 18 spots across Leonida.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 29,
@@ -1100,7 +1295,10 @@
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Hunt the unique animal Bret asks for — which one is still unconfirmed.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 30,
@@ -1139,8 +1337,16 @@
      "text": "Cards you've collected can be sold at Pawn Shops and will still contribute towards your progress.",
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Track collected sets under Touch Pad, Progress, Collections, Collectible Cards.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Complete any 3 collectible card sets.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 31,
@@ -1179,8 +1385,16 @@
      "text": "Scan with the WAiNK phone app (hold Up on the D-pad, then R1 / RB) — any 100 count, from the 31 Landmarks, 35 Curiosities, 23 Sculptures and the No Flusher tags.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Check your scanned total under Touch Pad, Progress, Collections, WAiNK Locations.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Scan 100 WAiNK locations with the phone app.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 32,
@@ -1220,7 +1434,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Complete any 50 of the 80 challenges.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 33,
@@ -1256,7 +1473,10 @@
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Lose a 4-star wanted level while your partner is with you, then escape.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 34,
@@ -1296,7 +1516,10 @@
    "target": {
     "count": 3,
     "unit": "shops"
-   }
+   },
+   "answer": "Rob 3 shops back-to-back with your partner without losing your wanted level.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 35,
@@ -1335,8 +1558,21 @@
      "text": "The 100% checklist needs 200 base models, so you'll get this anyway.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "Getting inside a vehicle discovers it automatically — scanning isn't the only way.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
+    },
+    {
+     "text": "Track discovered vehicles under Touch Pad, Progress, Vehicles.",
+     "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
+     "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Discover 100 vehicles.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 36,
@@ -1376,7 +1612,10 @@
    "target": {
     "count": 5,
     "unit": "enemies"
-   }
+   },
+   "answer": "Take down 5 enemies in a single use of Combat Focus.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 37,
@@ -1412,7 +1651,10 @@
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Steal a large passenger plane docked at a terminal at VCIA and fly away.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 38,
@@ -1443,7 +1685,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Steal a Rhino tank from Mile Zero Air Station.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 39,
@@ -1476,10 +1721,18 @@
      "text": "Keep a manual save beforehand while mission replay remains unclear.",
      "source": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
      "source_url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/"
+    },
+    {
+     "text": "Being spotted rules the trophy out — a loud smash-and-grab won't unlock it.",
+     "source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+     "source_url": "https://thegta6guide.com/gta-6-trophy-list/"
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Rob a jewelry store without being detected.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 40,
@@ -1519,7 +1772,10 @@
    "target": {
     "count": 5,
     "unit": "bank vaults"
-   }
+   },
+   "answer": "Rob 5 bank vaults and escape.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 41,
@@ -1550,7 +1806,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Rob an armored truck and escape — or let it pop during the Chapter 4 bank vault mission.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 42,
@@ -1590,7 +1849,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Explore all of Leonida — fully unfog the map across all 52 areas.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 43,
@@ -1625,7 +1887,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Rob one Illegal Operation belonging to each of the 9 gangs.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 44,
@@ -1657,7 +1922,10 @@
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
    ],
-   "unconfirmed": true
+   "unconfirmed": true,
+   "answer": "PowerPyx's route: buy an Apple Martini at the Ocean View Rooftop Bar and drink it by the bar — GTABase still lists it as unconfirmed.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 45,
@@ -1690,11 +1958,19 @@
      "text": "GTABase (18 Nov): the exact steps aren't confirmed yet — the description points to crashing a car out through the window of a vehicle showroom.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "The pop is slightly delayed — it lands after you drive further away on the street.",
+     "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+     "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
     }
    ],
    "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
-   "unconfirmed": true
+   "unconfirmed": true,
+   "answer": "PowerPyx's route: steal the blue Banshee from the south Vice City showroom and drive it through the window — GTABase still lists it as unconfirmed.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 46,
@@ -1730,7 +2006,10 @@
     }
    ],
    "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
-   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+   "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "answer": "Steal all 3 key valuables at Kingpin Bowling in Port Gellhorn.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 47,
@@ -1761,7 +2040,10 @@
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     }
-   ]
+   ],
+   "answer": "Reach maximum strength with both Jason and Lucia at the same time.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 48,
@@ -1791,8 +2073,16 @@
      "text": "Don't push towards the Irredeemable profile: it's permanent.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "PSNProfiles tracks this one on a 0/500 counter — watch it climb as your criminal profile changes.",
+     "source": "PSNProfiles — Grand Theft Auto VI trophies",
+     "source_url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi"
     }
-   ]
+   ],
+   "answer": "Perform 500 actions that affect your criminal profile.",
+   "answer_source": "GTABase — GTA 6 Trophy Guide & Achievements List",
+   "answer_source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
   },
   {
    "id": 49,
@@ -1822,9 +2112,17 @@
      "text": "Don't chase it. It will likely pop on its own while you do robberies.",
      "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
      "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
+    },
+    {
+     "text": "The best guess points to the Payday Loans store in Little Cuba, Vice City — possibly robbing it again later.",
+     "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+     "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
     }
    ],
-   "unconfirmed": true
+   "unconfirmed": true,
+   "answer": "No confirmed trigger yet — the best guess ties it to the Payday Loans store from the prologue.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 50,
@@ -1857,11 +2155,19 @@
      "text": "GTABase (18 Nov): expect a strange event or Easter egg somewhere in Leonida; the exact steps aren't confirmed yet.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
+    },
+    {
+     "text": "The spawn is slightly random, not guaranteed — the blinking car may simply not be there on a given night.",
+     "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+     "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
     }
    ],
    "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
-   "unconfirmed": true
+   "unconfirmed": true,
+   "answer": "PowerPyx's route: finish the UFO easter egg north-west of the Starlet Motel after 2AM — GTABase still lists it as unconfirmed.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 51,
@@ -1873,12 +2179,17 @@
    "kind": "one-off",
    "missable": false,
    "stage": 6,
-   "guide": "Not yet confirmed. The best guess is kicking people over while driving a motorcycle, a melee drive-by, but the exact trigger is still unproven. Try it in passing while you ride around. This guide will be updated once someone confirms it. GTABase (18 Nov) agrees: the exact steps aren't confirmed yet.",
-   "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap (currently unknown)",
+   "guide": "Not yet confirmed. PowerPyx's route is riding a bike and kicking 10 pedestrians within 60 seconds in a crowded area — but GTABase (18 Nov) still lists the exact steps as unconfirmed, so try it in passing while you ride around. This guide will be updated once someone confirms it.",
+   "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
    "steps": [
     {
-     "text": "No confirmed trigger yet — PowerPyx and GTABase (18 Nov) both list the exact steps as unconfirmed.",
+     "text": "Ride any bike and kick 10 pedestrians within 60 seconds — crowded areas like Vice City or Ocean Beach work best.",
+     "source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+     "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
+    },
+    {
+     "text": "GTABase (18 Nov) still lists the exact steps as unconfirmed — treat the bike-kick route as a best guess, not a guarantee.",
      "source": "GTABase — GTA 6 Trophy Guide & Achievements List",
      "source_url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series"
     },
@@ -1893,7 +2204,10 @@
      "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
     }
    ],
-   "unconfirmed": true
+   "unconfirmed": true,
+   "answer": "PowerPyx's route: ride a bike and kick 10 pedestrians within 60 seconds — GTABase still lists it as unconfirmed.",
+   "answer_source": "PowerPyx — GTA 6 Trophy Guide & Roadmap",
+   "answer_source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/"
   },
   {
    "id": 52,
@@ -1924,7 +2238,10 @@
      "source": "GTADb — GTA 6 PS5 Trophies & Platinum Guide",
      "source_url": "https://gtadb.net/articles/gta-6-trophies-platinum-guide/"
     }
-   ]
+   ],
+   "answer": "Launder $250,000 of marked bills through your contacts.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 53,
@@ -1955,7 +2272,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Spend $100,000 across all shops.",
+   "answer_source": "The GTA 6 Guide — Trophy List (28 Hidden)",
+   "answer_source_url": "https://thegta6guide.com/gta-6-trophy-list/"
   },
   {
    "id": 54,
@@ -1995,7 +2315,10 @@
      "source": "Push Square — GTA 6: Trophy Guide & Roadmap (WIP)",
      "source_url": "https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap"
     }
-   ]
+   ],
+   "answer": "Buy all 8 purchasable garages.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   },
   {
    "id": 55,
@@ -2035,15 +2358,19 @@
    "target": {
     "count": 10,
     "unit": "vehicles"
-   }
+   },
+   "answer": "Register 10 vehicles in the Scooter Bros app.",
+   "answer_source": "The Big Lead — GTA 6 trophy/achievement list",
+   "answer_source_url": "https://www.thebiglead.com/gta-6-trophy-achievement-list/"
   }
  ],
  "agreements": [
   "All ten sources list the same 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze, 28 hidden, 0 online.",
   "Time to platinum: PowerPyx, GTABase and GTADb say around 200 hours; Push Square says 250+ hours (up to 300). The guide uses ~200 hours, the majority figure.",
   "Missable: PowerPyx, GTABase and GTADb all flag Positive Mental Attitude as possibly missable (the Chapter 1 meditation with Lucia); Push Square lists “None known yet”. The guide flags it and tells you to do the meditation while you can.",
-  "Unconfirmed triggers: GTABase (18 Nov) lists the exact steps as unconfirmed for Bad Luck, I Guess; Ten Pin; In The Beginning…; Capital Offense; and The Truth Is Out There. PowerPyx gives a route for the last three — the guide shows it and marks it unconfirmed. Which animal triggers Fair Game is also not yet confirmed (GTABase).",
+  "Unconfirmed triggers: GTABase (18 Nov) lists the exact steps as unconfirmed for Bad Luck, I Guess; Ten Pin; In The Beginning…; Capital Offense; and The Truth Is Out There. PowerPyx gives a route for four of the five — In The Beginning…, Capital Offense, The Truth Is Out There and Ten Pin — and calls Bad Luck, I Guess currently unknown. The guide shows the routes and marks all five unconfirmed. Which animal triggers Fair Game is also not yet confirmed (GTABase).",
   "Shooting ranges: Push Square lists two locations; GTABase counts 42 gold medals across 12 ranges. Both agree on 42 gold medals.",
-  "100% completion does not need everything: GTABase and Push Square agree on 15 of 18 card sets, 70 of 80 challenges and 300 stunts."
+  "100% completion does not need everything: GTABase and Push Square agree on 15 of 18 card sets, 70 of 80 challenges and 300 stunts.",
+  "Missable, checked again: PSNProfiles’ list carries no missable flags at all (it is a trophy list, not a guide), so it neither confirms nor contradicts the one possibly-missable trophy."
  ]
 }

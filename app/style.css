@@ -110,6 +110,19 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .missable-callout p { margin: 0; font-size: 14px; color: var(--ink-dim); }
 .missable-callout strong { color: var(--ink); }
 
+.unconfirmed-callout {
+  border: 1px solid var(--accent-2); border-left: 5px solid var(--accent-2);
+  border-radius: 8px; padding: 12px 14px; margin: 12px 0 0; background: #2e2310;
+}
+.unconfirmed-callout h3 { margin: 0 0 4px; font-size: 15px; color: var(--accent-2); }
+.unconfirmed-callout p { margin: 0 0 8px; font-size: 14px; color: var(--ink-dim); }
+.unconfirmed-callout ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.unconfirmed-callout li { display: flex; align-items: center; gap: 6px; }
+.unconfirmed-callout button {
+  padding: 4px 10px; font-size: 12px; border-radius: 999px; background: var(--bg);
+}
+.unconfirmed-callout button.earned { text-decoration: line-through; opacity: 0.65; }
+
 .stages { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 @media (min-width: 900px) { .stages { grid-template-columns: 1fr 1fr; } }
 .stages li {
@@ -178,6 +191,7 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .sources li { margin-bottom: 5px; }
 .sources a { color: var(--teal); }
 .source-role { color: var(--ink-dim); }
+.source-date { color: var(--ink-faint); font-size: 13px; }
 .source-counts { color: var(--ink-faint); font-size: 13px; }
 #agreementList li { margin-bottom: 6px; color: var(--ink-dim); }
 .disclaimer { font-size: 13px; color: var(--ink-faint); }
@@ -209,6 +223,14 @@ button:hover, .import-btn:hover { border-color: var(--accent); }
 .detail-meta { margin: 0 0 16px; font-size: 13px; color: var(--ink-faint); }
 .detail-target { margin: -8px 0 16px; font-size: 15px; font-weight: 700; color: var(--teal); }
 .detail-target span { color: var(--ink-faint); font-weight: 400; }
+.detail-answer {
+  margin: 0 0 12px; padding: 10px 12px; border-left: 4px solid var(--teal);
+  border-radius: 0 8px 8px 0; background: var(--panel-2); font-size: 15px;
+}
+.detail-missable-note {
+  margin: 0 0 12px; padding: 10px 12px; border-left: 4px solid var(--danger);
+  border-radius: 0 8px 8px 0; background: #2e1220; font-size: 14px; color: var(--ink-dim);
+}
 .detail-body p { font-size: 15px; }
 .detail-body ol { padding-left: 22px; font-size: 15px; }
 .detail-body li { margin-bottom: 6px; }
