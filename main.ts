@@ -1,44 +1,36 @@
-// Leonida Trophy Guide — production entrypoint.
-// Serves the offline app from ./app on Bun. No external requests are made.
-import { join } from "node:path";
+// Leonida Trophy Guide — hand-in program (Node 22, standard library only).
+// The guide is the static app/ folder beside this file. This program copies
+// app/ and screenshots/ into the output directory and writes dossier.json
+// with the kit's vendored library, exactly as the scorer rebuilds it.
+//
+// Run it outside the grader with MAKEFUN_OUTPUT_DIR standing in for /output:
+//   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { buildDossier } from './vendor/makefun-frontend.ts';
 
-const APP_DIR = join(import.meta.dir, "app");
-const PORT = Number(process.env.PORT ?? 8080);
+const here = fileURLToPath(new URL('.', import.meta.url));
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+const appDir = join(here, 'app');
+const shotsDir = join(here, 'screenshots');
 
-const MIME: Record<string, string> = {
-  ".html": "text/html; charset=utf-8",
-  ".css": "text/css; charset=utf-8",
-  ".js": "text/javascript; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-  ".jpg": "image/jpeg",
-  ".png": "image/png",
-  ".svg": "image/svg+xml",
-};
-
-function contentType(path: string): string {
-  const dot = path.lastIndexOf(".");
-  const ext = dot === -1 ? "" : path.slice(dot);
-  return MIME[ext] ?? "application/octet-stream";
+function handIn() {
+  mkdirSync(outDir, { recursive: true });
+  cpSync(appDir, join(outDir, 'app'), { recursive: true });
+  mkdirSync(join(outDir, 'screenshots'), { recursive: true });
+  if (existsSync(shotsDir)) {
+    cpSync(shotsDir, join(outDir, 'screenshots'), { recursive: true });
+  }
+  const dossier = buildDossier(outDir, {
+    text_max_bytes: 163840,
+    screenshots: { max: 4, max_bytes: 262144 },
+    app_max_files: 993,
+    app_max_bytes: 50331648,
+  });
+  writeFileSync(join(outDir, 'dossier.json'), dossier);
+  return outDir;
 }
 
-Bun.serve({
-  port: PORT,
-  async fetch(req) {
-    const url = new URL(req.url);
-    let rel = decodeURIComponent(url.pathname);
-    if (rel === "/") rel = "/index.html";
-    // Never let a request escape the app directory.
-    const filePath = join(APP_DIR, rel);
-    if (!filePath.startsWith(APP_DIR)) return new Response("Not found", { status: 404 });
-    const file = Bun.file(filePath);
-    if (!(await file.exists())) return new Response("Not found", { status: 404 });
-    return new Response(file, {
-      headers: {
-        "content-type": contentType(filePath),
-        "cache-control": "no-cache",
-      },
-    });
-  },
-});
-
-console.log(`Leonida Trophy Guide running at http://localhost:${PORT}/`);
+const dest = handIn();
+console.log(`Leonida Trophy Guide handed in to ${dest}`);

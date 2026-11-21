@@ -1,58 +1,66 @@
-// Leonida Trophy Guide — dev server.
-// Same static app as main.ts, on port 3000 by default, with a request log.
-// Run: bun serve.ts
-import { join } from "node:path";
+// Leonida Trophy Guide — local dev server (Node 22, standard library only).
+// Serves app/ on http://localhost:8080 (or --port <n>) so the guide can be
+// opened in a browser without a build step. It serves only files under app/,
+// answers anything else with 404, and logs each request with its status.
+import { createReadStream, statSync } from 'node:fs';
+import { createServer } from 'node:http';
+import { extname, join, normalize, resolve, sep } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const APP_DIR = join(import.meta.dir, "app");
-const PORT = Number(process.env.PORT ?? 3000);
+const root = resolve(fileURLToPath(new URL('./app', import.meta.url)));
+const args = process.argv.slice(2);
+const portFlag = args.indexOf('--port');
+const wanted = portFlag === -1 ? 8080 : Number(args[portFlag + 1]);
+const port = Number.isInteger(wanted) && wanted > 0 && wanted < 65536 ? wanted : 8080;
 
-const MIME: Record<string, string> = {
-  ".html": "text/html; charset=utf-8",
-  ".css": "text/css; charset=utf-8",
-  ".js": "text/javascript; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-  ".jpg": "image/jpeg",
-  ".png": "image/png",
-  ".svg": "image/svg+xml",
+const TYPES = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.mjs': 'text/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.svg': 'image/svg+xml',
+  '.ico': 'image/x-icon',
 };
 
-function contentType(path: string): string {
-  const dot = path.lastIndexOf(".");
-  const ext = dot === -1 ? "" : path.slice(dot);
-  return MIME[ext] ?? "application/octet-stream";
-}
-
-Bun.serve({
-  port: PORT,
-  async fetch(req) {
-    const started = Date.now();
-    const url = new URL(req.url);
-    let rel = decodeURIComponent(url.pathname);
-    if (rel === "/") rel = "/index.html";
-    const filePath = join(APP_DIR, rel);
-    let status = 200;
-    let body: BodyInit;
-    if (!filePath.startsWith(APP_DIR)) {
-      status = 404;
-      body = "Not found";
-    } else {
-      const file = Bun.file(filePath);
-      if (!(await file.exists())) {
-        status = 404;
-        body = "Not found";
-      } else {
-        body = file;
-      }
-    }
-    console.log(`${req.method} ${url.pathname} -> ${status} (${Date.now() - started}ms)`);
-    return new Response(body, {
-      status,
-      headers: {
-        "content-type": contentType(filePath),
-        "cache-control": "no-cache",
-      },
-    });
-  },
+const server = createServer((req, res) => {
+  const started = Date.now();
+  let path = '/';
+  try {
+    path = decodeURIComponent(new URL(req.url ?? '/', 'http://localhost').pathname);
+  } catch {
+    res.writeHead(400).end('bad request');
+    return;
+  }
+  if (path.endsWith('/')) path += 'index.html';
+  const file = resolve(join(root, normalize(path)));
+  if (file !== root && !file.startsWith(root + sep)) {
+    res.writeHead(403).end('forbidden');
+    console.log(`${req.method} ${path} -> 403 (${Date.now() - started}ms)`);
+    return;
+  }
+  let size;
+  try {
+    const st = statSync(file);
+    if (!st.isFile()) throw new Error('not a file');
+    size = st.size;
+  } catch {
+    res.writeHead(404).end('not found');
+    console.log(`${req.method} ${path} -> 404 (${Date.now() - started}ms)`);
+    return;
+  }
+  res.writeHead(200, {
+    'content-type': TYPES[extname(file).toLowerCase()] ?? 'application/octet-stream',
+    'content-length': size,
+    'cache-control': 'no-store',
+  });
+  createReadStream(file).pipe(res);
+  console.log(`${req.method} ${path} -> 200 (${Date.now() - started}ms)`);
 });
 
-console.log(`Leonida Trophy Guide (dev) running at http://localhost:${PORT}/`);
+server.listen(port, '127.0.0.1', () => {
+  console.log(`Leonida Trophy Guide (dev) on http://localhost:${port}`);
+});
