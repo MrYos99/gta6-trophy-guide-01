@@ -1,111 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leonida Trophy Guide — GTA VI, all 55 PS5 trophies</title>
-<meta name="description" content="A guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: checklist, roadmap to the platinum, missable flags, spoiler setting, export and import. Works offline.">
+<title>Leonida Trophy Guide — GTA VI PS5</title>
+<meta name="description" content="Offline checklist and roadmap for all 55 Grand Theft Auto VI trophies on PlayStation 5.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
-    <h1>Leonida Trophy Guide</h1>
-    <p class="lede">All 55 trophies, each with its official name and description, a guide in plain words, and a source you can check. Tick them off as you earn them. Your progress stays in this browser.</p>
-    <div class="facts">
-      <span><strong>55</strong> trophies</span>
-      <span><strong>1</strong> platinum</span>
-      <span><strong>2</strong> gold</span>
-      <span><strong>6</strong> silver</span>
-      <span><strong>46</strong> bronze</span>
-      <span><strong>28</strong> hidden</span>
-      <span><strong>0</strong> online</span>
-      <span><strong>~200 h</strong> to platinum</span>
-      <span><strong>4/10</strong> difficulty</span>
-      <span><strong>227</strong> cited steps</span>
-      <span><strong>10</strong> sources</span>
-    </div>
-    <div class="progress-wrap">
-      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressLeft">55 to go</span></div>
-      <div class="progress-bar"><div id="progressFill"></div></div>
-    </div>
-  </div>
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="tagline">All 55 trophies. One platinum. Zero guesswork — every step is cited, and the two trophies nobody has solved yet are marked unconfirmed, not invented.</p>
+  <div class="hero-stats" id="heroStats"></div>
 </header>
 
 <main>
-  <div class="toolbar" id="toolbar">
-    <input id="search" type="search" placeholder="Search a trophy by name…" aria-label="Search trophies">
-    <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
-    <label class="grade-label">Grade
-      <select id="grade">
-        <option value="all">All grades</option>
-        <option value="platinum">Platinum</option>
-        <option value="gold">Gold</option>
-        <option value="silver">Silver</option>
-        <option value="bronze">Bronze</option>
-      </select>
-    </label>
-    <label class="spoiler-label"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
-    <button id="roadmapBtn" type="button">Roadmap to platinum</button>
-    <button id="exportBtn" type="button">Export progress</button>
-    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
-  </div>
-
-  <p id="nextUp" class="next-up" hidden></p>
-
-  <section id="unconfirmedCallout" class="unconfirmed-callout">
-    <h3>5 trophies have unconfirmed triggers</h3>
-    <p>These five have no confirmed unlock route yet — the sources disagree or say so outright. The guide shows each source's best route and marks it clearly. Don't chase them; they may pop on their own.</p>
-    <ul id="unconfirmedList"></ul>
-  </section>
-
-  <section id="roadmap" class="roadmap" hidden>
-    <h2>Roadmap to the platinum</h2>
-    <p class="roadmap-intro">Five chapters, about 60 to 80 hours of story, then cleanup in free-roam. There is no mission replay in GTA VI, but everything the platinum needs is still reachable after the story, so play it once and clean up afterwards. Cheats disable trophies and saving, so leave them alone.</p>
-    <div class="missable-callout">
-      <h3>One trophy can be missed</h3>
-      <p><strong>Positive Mental Attitude</strong> is the only missable trophy. During Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning. She says she is going to meditate and walks to the balcony. Follow her, accept, and she teaches you. That meditation is gone for good after Chapter 1, and it is still unclear whether it counts toward the trophy, so do it while you can.</p>
+  <section class="panel" id="progressPanel" aria-label="Progress">
+    <div class="progress-head">
+      <h2>Your progress</h2>
+      <span id="progressText">0 / 55</span>
     </div>
-    <ol class="stages" id="stages"></ol>
-    <p class="roadmap-note">Roadmap order and timings follow PowerPyx. Stage 1, 60–80 h; Stage 2, 10–20 h; Stage 3, ~100 h; Stages 4–6, ~10–25 h each.</p>
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBarWrap">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="tier-counts" id="tierCounts"></div>
+    <p class="progress-note" id="platinumNote">Platinum: Vice Got a Price! — unlocks when the other 54 are done. Estimated time to platinum: about 200 hours.</p>
+    <button class="btn btn-ghost" id="resetBtn" type="button">Reset checklist</button>
   </section>
 
-  <p id="emptyState" class="empty" hidden></p>
-  <ul id="list" class="list"></ul>
+  <section class="panel nextup" id="nextup" aria-label="Next up">
+    <h2>Next up</h2>
+    <div id="nextUpCard">
+      <p class="nextup-name" id="nextUpName">Loading…</p>
+      <p class="nextup-why" id="nextUpWhy"></p>
+      <ol class="steps" id="nextUpSteps"></ol>
+      <button class="btn" id="nextUpDone" type="button">Mark done</button>
+      <button class="btn btn-ghost" id="nextUpReveal" type="button" style="display:none">Reveal details</button>
+    </div>
+  </section>
 
-  <section class="sources">
-    <h2>Where the facts come from</h2>
-    <ul id="sourceList"></ul>
-    <h3>How the sources agree (and where they don't)</h3>
-    <ul id="agreementList"></ul>
-    <p class="disclaimer">Trophy names and descriptions are the official PlayStation text. The guides are written for this page, in our own words, from the sources above. This is an unofficial fan guide, not affiliated with Rockstar Games or Take-Two Interactive.</p>
+  <section class="panel" id="roadmap" aria-label="Platinum roadmap">
+    <h2>Platinum roadmap — 6 stages</h2>
+    <p class="section-intro">Follow the stages in order. Stage 1 is the only one that can cost you a trophy, so read it before you start Chapter 1.</p>
+    <ol class="roadmap" id="roadmapList"></ol>
+  </section>
+
+  <section class="panel" id="checklist" aria-label="Trophy checklist">
+    <h2>Trophy checklist</h2>
+    <div class="controls">
+      <label class="control">
+        <input type="search" id="searchBox" placeholder="Search trophies…" aria-label="Search trophies">
+      </label>
+      <label class="control">
+        <input type="checkbox" id="spoilerToggle" checked>
+        Spoiler mode (hide hidden-trophy details)
+      </label>
+      <label class="control">
+        <input type="checkbox" id="hideDoneToggle">
+        Hide completed
+      </label>
+      <label class="control">
+        <input type="checkbox" id="unconfirmedToggle">
+        Unconfirmed only
+      </label>
+      <label class="control">
+        Tier
+        <select id="tierFilter">
+          <option value="all">All tiers</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="control">
+        Category
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+        </select>
+      </label>
+    </div>
+    <p class="count-line" id="countLine"></p>
+    <ul class="trophy-list" id="trophyList"></ul>
+  </section>
+
+  <section class="panel" id="sources" aria-label="Sources and notes">
+    <h2>Sources &amp; honesty notes</h2>
+    <ul>
+      <li>Guide facts: GTABase — GTA 6 Trophy Guide &amp; Achievements List (PS5 &amp; Xbox Series X|S), November 2026.</li>
+      <li>Cross-checked against: PSNProfiles — Grand Theft Auto VI Trophies; Push Square — GTA 6: Trophy Guide &amp; Roadmap.</li>
+      <li><strong>Unconfirmed:</strong> “Bad Luck, I Guess” and “Ten Pin” have no confirmed trigger in any source. This guide lists them as unconfirmed and gives no steps for them.</li>
+      <li><strong>Partial:</strong> “Fair Game”, “In The Beginning…”, “Capital Offense” and “The Truth Is Out There” have a known direction but no confirmed exact steps — the guide says so on each card.</li>
+      <li><strong>Missable:</strong> exactly one trophy can be missed — “Positive Mental Attitude”. Do the Chapter 1 balcony meditation with Lucia the morning after Down to Earth.</li>
+      <li>Cheats disable trophies and saving, so keep them off your trophy run. There are no online or DLC trophies; one playthrough is enough.</li>
+      <li>This app works fully offline. Your checklist is saved in your browser (localStorage) on this device only.</li>
+    </ul>
+    <p class="fineprint">Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Not affiliated with Rockstar Games.</p>
   </section>
 </main>
 
-<div id="detail" class="detail" hidden>
-  <div class="detail-card" role="dialog" aria-modal="true" aria-labelledby="detailName">
-    <button id="detailClose" type="button" aria-label="Close guide">×</button>
-    <p class="detail-kind"><span id="detailGrade"></span><span id="detailKind"></span><span id="detailHidden"></span><span id="detailMissable"></span><span id="detailUnconfirmed"></span></p>
-    <h2 id="detailName"></h2>
-    <p id="detailDesc" class="detail-desc"></p>
-    <p id="detailMeta" class="detail-meta"></p>
-    <p id="detailTarget" class="detail-target" hidden></p>
-    <div class="detail-body">
-      <p id="detailAnswer" class="detail-answer" hidden></p>
-      <p id="detailMissableNote" class="detail-missable-note" hidden></p>
-      <p id="detailGuide"></p>
-      <ol id="detailSteps"></ol>
-      <p class="detail-source">Source: <a id="detailSource" href="#" target="_blank" rel="noopener"></a></p>
-    </div>
-    <div class="detail-actions">
-      <button id="detailToggle" type="button">Mark as earned</button>
-      <button id="detailPrev" type="button">← Previous</button>
-      <button id="detailNext" type="button">Next →</button>
-    </div>
-  </div>
-</div>
+<footer>
+  <p>Leonida Trophy Guide — built for the make.fun GTA VI trophy guide bounty. Data updated 21 November 2026.</p>
+</footer>
 
-<script type="module" src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
